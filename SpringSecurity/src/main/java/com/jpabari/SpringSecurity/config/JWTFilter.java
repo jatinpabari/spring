@@ -1,5 +1,7 @@
-package com.jpabari.SpringSecurity;
+package com.jpabari.SpringSecurity.config;
 
+import com.jpabari.SpringSecurity.service.CustomUserDetailsService;
+import com.jpabari.SpringSecurity.service.JWTService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -16,7 +18,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 
 @Configuration
-public class JwtFilter extends OncePerRequestFilter {
+public class JWTFilter extends OncePerRequestFilter {
 
     @Autowired
     private JWTService jwtService;

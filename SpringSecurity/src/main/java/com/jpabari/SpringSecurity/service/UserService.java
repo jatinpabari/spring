@@ -1,5 +1,7 @@
-package com.jpabari.SpringSecurity;
+package com.jpabari.SpringSecurity.service;
 
+import com.jpabari.SpringSecurity.model.Users;
+import com.jpabari.SpringSecurity.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

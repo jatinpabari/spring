@@ -1,4 +1,4 @@
-package com.jpabari.SpringSecurity;
+package com.jpabari.SpringSecurity.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

@@ -1,5 +1,7 @@
-package com.jpabari.SpringSecurity;
+package com.jpabari.SpringSecurity.controller;
 
+import com.jpabari.SpringSecurity.service.UserService;
+import com.jpabari.SpringSecurity.model.Users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
