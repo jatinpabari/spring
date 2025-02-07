@@ -34,7 +34,9 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity.csrf(customizer -> customizer.disable())
-                    .authorizeHttpRequests(request -> request.requestMatchers("register", "login").permitAll()
+                    .authorizeHttpRequests(request -> request
+                            .requestMatchers("/admin/**").hasAuthority("ADMIN")
+                            .requestMatchers("/register", "/login").permitAll()
                             .anyRequest().authenticated())
 //        httpSecurity.formLogin(Customizer.withDefaults());
                     .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) //to make sessions stateless

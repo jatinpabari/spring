@@ -11,4 +11,9 @@ public class SampleController {
         return "Hello from Jatin";
     }
 
+    @GetMapping("/admin/greet")
+    public String greetAdmin(){
+        return "Hello Admin from Jatin";
+    }
+
 }

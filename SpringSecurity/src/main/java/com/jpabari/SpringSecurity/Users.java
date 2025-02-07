@@ -13,6 +13,8 @@ public class Users {
 
     private String password;
 
+    private String role;
+
     public void setId(int id){
         this.id = id;
     }
@@ -38,6 +40,12 @@ public class Users {
         return password;
     }
 
+    public String getRole() {
+        return role;
+    }
 
+    public void setRole(String role){
+        this.role = role;
+    }
 
 }
